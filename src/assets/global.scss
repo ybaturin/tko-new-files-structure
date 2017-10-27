@@ -1,0 +1,206 @@
+@import "mixin";
+@import "variables";
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+ui-view, scheme-main {
+  flex-grow: 1;
+}
+
+scheme-filter, scheme-top-menu {
+  z-index: 2;
+  position: relative;
+}
+
+$menuZIndex: 101;
+main-header, main-menu {
+  //меню и шапка должны быть над blur-нодой карточки, у которых макс. zIndex = 100
+  z-index: $menuZIndex;
+  position: relative;
+}
+
+.ns-popover-container {
+  z-index: $menuZIndex + 1;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100%;
+  pointer-events: none;
+
+  main-menu,
+  scheme-top-menu,
+  chart-waste-dev-cons,
+  chart-balans-othodov,
+  .scheme, .map-legend, .shron, .top-menu {
+    pointer-events: all;
+  }
+}
+
+.flex {
+  @include flex
+}
+
+.flex-column {
+  @include flex(column);
+}
+
+.flex-fill {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.flex-center {
+  @include flex(row, center)
+}
+
+.flex-hor__between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-end__item {
+  margin-left: auto;
+}
+
+.grey_text {
+  color: $grey_text;
+}
+
+.menu_text {
+  color: #cad3f0;;
+}
+
+.orange_text {
+  color: $orange_text;
+}
+
+.white_text {
+  color: #fff;
+}
+
+.blue_text {
+  color: $blue_text;
+}
+
+.green_text {
+  color: #85c347;
+}
+
+.red_text {
+  color: $red_text;
+}
+
+.link {
+  text-decoration: none;
+  color: $blue_text;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue_active;
+  }
+}
+
+.link-container {
+
+  &:hover {
+    .link:not(.link--second) {
+      color: $blue_active;
+    }
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.failed-validation {
+  @extend .red_text;
+  font-size: 12px;
+}
+
+.border_none {
+  border-bottom: none !important;
+}
+
+.css-form input.ng-invalid.ng-touched {
+  background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-touched {
+  background-color: #78FA89;
+}
+
+.comma {
+  &:after {
+    content: ',';
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.close {
+  color: $grey_text;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.padding {
+  &-bottom {
+    padding-bottom: 8px;
+  }
+
+  &-top {
+    padding-top: 8px;
+  }
+}
+
+.margin {
+  &-bottom {
+    margin-bottom: 8px;
+  }
+
+  &-top {
+    margin-top: 8px;
+  }
+}
+
+.full-width {
+  flex-grow: 1;
+}
+
+#certEnrollClassFactory {
+  display: none;
+}
+
+.global {
+  &__field--bb__grey{
+    border-bottom: 1px solid $border_grey;
+  }
+
+  &__field--bb__red{
+    border-bottom: 1px solid $border_red;
+  }
+}

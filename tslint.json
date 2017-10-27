@@ -1,0 +1,26 @@
+{
+  "extends": ["tslint-eslint-rules", "tslint-config-airbnb"],
+  "rulesDirectory": ["./tslintRules"],
+  "rules": {
+    "no-debug-comment": true,
+    "no-default-export": true,
+    "max-line-length": false,
+    "ter-max-len": [
+      true, {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreTemplateLiterals": true,
+        "ignorePattern": "^import .*\\s*from\\s*'[^']*'"
+     }
+    ],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore", "allow-snake-case"],
+    "function-name": [false],
+    "align": [
+      true,
+      "parameters"
+    ],
+    "object-shorthand-properties-first": false,
+    "strict-boolean-expressions": false,
+    "no-increment-decrement": false
+  }
+}

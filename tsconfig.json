@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
+    "lib": ["es2016", "dom"],                             /* Specify library files to be included in the compilation:  */
+    "baseUrl": ".",                       /* Base directory to resolve non-absolute module names. */
+    "typeRoots": [
+      "node_modules/@types",
+      "app/customTypings"
+    ],
+    "noImplicitAny": false,
+    "paths": {
+      "utils": ["app/components/main/common/utils"],
+    }
+  },
+  "include": [
+    "app/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
