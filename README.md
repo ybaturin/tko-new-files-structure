@@ -1,67 +1,68 @@
-Θςξγξ, ρςπσκςσπΰ ασδες οξυξζΰ νΰ ύςσ:
+ΠΡ‚ΠΎΠ³ΠΎ, ΡΡ‚Ρ€ΡƒΠΊΡ‚ΡƒΡ€Π° Π±ΡƒΠ΄ΠµΡ‚ ΠΏΠΎΡ…ΠΎΠ¶Π° Π½Π° ΡΡ‚Ρƒ:
 
+```
 .
 +-- configs
-¦   +-- private.ts
-¦   L-- tslint-rules
-¦       +-- noDebugCommentRule.js
-¦       L-- noDebugCommentRule.ts
+Β¦Β Β  +-- private.ts
+Β¦Β Β  L-- tslint-rules
+Β¦Β Β      +-- noDebugCommentRule.js
+Β¦Β Β      L-- noDebugCommentRule.ts
 +-- deploy.sh
 +-- docs
 +-- node_modules
 +-- package.json
 +-- package-lock.json
 +-- src
-¦   +-- app
-¦   ¦   +-- app.js
-¦   ¦   +-- backend
-¦   ¦   ¦   L-- README.md
-¦   ¦   +-- const.ts
-¦   ¦   +-- core
-¦   ¦   ¦   +-- base.ts
-¦   ¦   ¦   L-- urls.ts
-¦   ¦   +-- index.html
-¦   ¦   +-- pages
-¦   ¦   ¦   +-- linear
-¦   ¦   ¦   ¦   +-- linear.page.html
-¦   ¦   ¦   ¦   +-- linear.page.scss
-¦   ¦   ¦   ¦   +-- linear.page.ts
-¦   ¦   ¦   ¦   L-- verification-requests
-¦   ¦   ¦   ¦       +-- verification-requests.page.html
-¦   ¦   ¦   ¦       +-- verification-requests.page.scss
-¦   ¦   ¦   ¦       L-- verification-requests.page.ts
-¦   ¦   ¦   L-- README.md
-¦   ¦   +-- README.md
-¦   ¦   +-- routes.ts
-¦   ¦   +-- shared
-¦   ¦   ¦   +-- components
-¦   ¦   ¦   ¦   +-- cards
-¦   ¦   ¦   ¦   +-- README.md
-¦   ¦   ¦   ¦   L-- some-feature-block
-¦   ¦   ¦   ¦       +-- child-component
-¦   ¦   ¦   ¦       ¦   +-- child-component.component.html
-¦   ¦   ¦   ¦       ¦   +-- child-component.component.scss
-¦   ¦   ¦   ¦       ¦   L-- child-component.component.ts
-¦   ¦   ¦   ¦       +-- some-feature-block.component.html
-¦   ¦   ¦   ¦       +-- some-feature-block.component.scss
-¦   ¦   ¦   ¦       L-- some-feature-block.component.ts
-¦   ¦   ¦   +-- filters
-¦   ¦   ¦   +-- interfaces
-¦   ¦   ¦   +-- mixins
-¦   ¦   ¦   L-- services
-¦   ¦   ¦       +-- map-drawers
-¦   ¦   ¦       L-- some-service
-¦   ¦   ¦           L-- some-service.service.ts
-¦   ¦   L-- vendor.ts
-¦   +-- assets
-¦   ¦   +-- cades_pluging
-¦   ¦   ¦   L-- cadesplugin_api.js
-¦   ¦   +-- global.scss
-¦   ¦   +-- img
-¦   ¦   ¦   L-- pins
-¦   ¦   L-- README.md
-¦   L-- styles
-¦       L-- README.md
+Β¦Β Β  +-- app
+Β¦Β Β  Β¦Β Β  +-- app.js
+Β¦Β Β  Β¦Β Β  +-- backend
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- README.md
+Β¦Β Β  Β¦Β Β  +-- const.ts
+Β¦Β Β  Β¦Β Β  +-- core
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- base.ts
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- urls.ts
+Β¦Β Β  Β¦Β Β  +-- index.html
+Β¦Β Β  Β¦Β Β  +-- pages
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- linear
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- linear.page.html
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- linear.page.scss
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- linear.page.ts
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- verification-requests
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- verification-requests.page.html
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- verification-requests.page.scss
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      L-- verification-requests.page.ts
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- README.md
+Β¦Β Β  Β¦Β Β  +-- README.md
+Β¦Β Β  Β¦Β Β  +-- routes.ts
+Β¦Β Β  Β¦Β Β  +-- shared
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- components
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- cards
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- README.md
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- some-feature-block
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- child-component
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      Β¦Β Β  +-- child-component.component.html
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      Β¦Β Β  +-- child-component.component.scss
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      Β¦Β Β  L-- child-component.component.ts
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- some-feature-block.component.html
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- some-feature-block.component.scss
+Β¦Β Β  Β¦Β Β  Β¦Β Β  Β¦Β Β      L-- some-feature-block.component.ts
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- filters
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- interfaces
+Β¦Β Β  Β¦Β Β  Β¦Β Β  +-- mixins
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- services
+Β¦Β Β  Β¦Β Β  Β¦Β Β      +-- map-drawers
+Β¦Β Β  Β¦Β Β  Β¦Β Β      L-- some-service
+Β¦Β Β  Β¦Β Β  Β¦Β Β          L-- some-service.service.ts
+Β¦Β Β  Β¦Β Β  L-- vendor.ts
+Β¦Β Β  +-- assets
+Β¦Β Β  Β¦Β Β  +-- cades_pluging
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- cadesplugin_api.js
+Β¦Β Β  Β¦Β Β  +-- global.scss
+Β¦Β Β  Β¦Β Β  +-- img
+Β¦Β Β  Β¦Β Β  Β¦Β Β  L-- pins
+Β¦Β Β  Β¦Β Β  L-- README.md
+Β¦Β Β  L-- styles
+Β¦Β Β      L-- README.md
 +-- tree.txt
 +-- tsconfig.json
 +-- tslint.json
